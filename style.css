@@ -1,0 +1,94 @@
+.header {
+  min-height: 100vh;
+  background-image: url("./img/home-bg.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: clamp(300px, 45vw, 700px);
+}
+
+/* NAVBAR TOP */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+}
+
+.logo {
+  height: 50px;
+}
+
+/* MENU */
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  position: relative;
+}
+
+/* Hover underline animation */
+.navbar a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #007bff;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+/* Contact Button */
+.navbar .btn {
+  padding: 0.5rem 1.2rem;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+}
+
+.navbar .btn:hover {
+  background: #0056b3;
+}
+
+/* HERO SECTION */
+.hero {
+  display: flex;
+  align-items: center;
+  min-height: 80vh;
+  padding: 0 3rem;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.hero-btn {
+  display: inline-block;
+  background: #007bff;
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 5px;
+  text-decoration: none;
+}

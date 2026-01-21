@@ -4,35 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modern Creative</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Home Section -->
-    <section>
-         <header>
-        <img src="./img/logo.png" alt="Logo">
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#price">Price</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-     <div>
-            <h1>Multimax Creative Agency</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis vero, perferendis praesentium ipsum facere aliquid corrupti iste odit dignissimos fugiat quisquam quo quas similique voluptates facilis nisi odio accusantium. Aperiam</p>
-            <button>Get Started</button>
-        </div>
-        <div>
-            <img src="./img/home-bg.png" alt="home-bg">
-            <img src="./img/home-04.png" alt="home-04">
-        </div>
-    </section>
+   <header class="header">
+  <div class="nav-container">
+    <img src="./img/logo.png" class="logo" alt="Logo">
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#price">Price</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact" class="btn">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- HERO CONTENT -->
+  <div class="hero">
+    <div class="hero-text">
+      <h1>Multimax Creative Agency</h1>
+      <p>We build modern, creative, and powerful digital experiences for brands.</p>
+      <a href="#" class="hero-btn">Get Started</a>
+    </div>
+  </div>
+</header>
 
     <!-- About Section -->
     <section>
@@ -80,9 +82,65 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum possimus cupiditate voluptates amet dolor nobis dolore dolores doloremque quasi sunt odit nulla minus exercitationem, placeat mollitia repellendus unde ex non?
             </p>
         </div>
-        <div>
+        <div class="skills-container">
+            <!-- Skill 1: HTML//CSS3 -->
+            <div class="skill">
+                <div class="skill-header">
+                    <h3>HTML//CSS3</h3>
+                    <span class="skill-percentage">90%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 90%;"></div>
+                </div>
+            </div>
             
+            <!-- Skill 2: Jquery//Javascript -->
+            <div class="skill">
+                <div class="skill-header">
+                    <h3>Jquery//Javascript</h3>
+                    <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 85%;"></div>
+                </div>
+            </div>
+            
+            <!-- Skill 3: WordPress -->
+            <div class="skill">
+                <div class="skill-header">
+                    <h3>WordPress</h3>
+                    <span class="skill-percentage">80%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 80%;"></div>
+                </div>
+            </div>
+            
+            <!-- Skill 4: Bootstrap -->
+            <div class="skill">
+                <div class="skill-header">
+                    <h3>Bootstrap</h3>
+                    <span class="skill-percentage">95%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 95%;"></div>
+                </div>
+            </div>
         </div>
+    </section>
+
+    <!-- Services Section -->
+    <section>
+        <h2>Our Services</h2>
+        <div>
+            <div>
+                <img src="" alt="">
+                <h3>Design and Interface</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
+            </div>
+                
+        </div>
+
     </section>
     
 </body>
