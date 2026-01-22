@@ -1,9 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f8f9fc;
+  color: #333;
+}
+
+
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background: #ffcc00;
+  cursor: pointer;
+  font-weight: bold;
+}
 .header {
   min-height: 100vh;
   background-image: url("./img/home-bg.png");
   background-repeat: no-repeat;
   background-position: top right;
-  background-size: clamp(300px, 45vw, 700px);
+  background-size:100%;
 }
 
 /* NAVBAR TOP */
@@ -66,8 +87,9 @@
 .hero {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   min-height: 80vh;
-  padding: 0 3rem;
+  padding: 0 5rem;
 }
 
 .hero-text {
@@ -85,10 +107,22 @@
 }
 
 .hero-btn {
-  display: inline-block;
-  background: #007bff;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #007bff, #00bfff);
   color: white;
-  padding: 0.75rem 2rem;
-  border-radius: 5px;
+  padding: 14px 36px;
+  border-radius: 30px;
   text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 25px rgba(0, 123, 255, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+.hero-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(0, 123, 255, 0.4);
 }
